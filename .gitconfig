@@ -1,0 +1,17 @@
+[github]
+	user = atchoum69
+[user]
+	email = lefort.cedric@gmail.com
+[push]
+	default = simple
+[branch]
+	autosetuprebase = always
+[color]
+	ui = true
+	status = auto
+	branch = auto
+[core]
+	editor = vim
+	excludesfile = /home/cedric/workspace/browserDetector/.gitignore
+[merge]
+	tool = kdiff3

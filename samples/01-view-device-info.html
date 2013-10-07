@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>View device info with browser-detector</title>
+		<script src="../browser-detector.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			var matched = new Browser.Detector();
+			$("#browser").text(matched.getBrowser());
+			$("#version").text(matched.getVersion());
+			$("#ie6").text(matched.isIE6());
+			$("#ie7").text(matched.isIE7());
+			$("#ie8").text(matched.isIE8());
+			$("#ie9").text(matched.isIE9());
+			$("#ie").text(matched.isIE());
+		});
+		</script>
+	</head>
+	<body>
+		<div>
+			<span>browser: </span>
+			<span id="browser"></span>
+		</div>
+		<div>
+			<span>version: </span>
+			<span id="version"></span>
+		</div>
+		<div>
+			<span>ie6: </span>
+			<span id="ie6"></span>
+		</div>
+		<div>
+			<span>ie7: </span>
+			<span id="ie7"></span>
+		</div>
+		<div>
+			<span>ie8: </span>
+			<span id="ie8"></span>
+		</div>
+		<div>
+			<span>ie9: </span>
+			<span id="ie9"></span>
+		</div>
+	</body>
+</html>
